@@ -1,0 +1,16 @@
+Index: src/main/java/com/example/billing_system/HelloResource.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.billing_system;\r\n\r\nimport jakarta.ws.rs.GET;\r\nimport jakarta.ws.rs.Path;\r\nimport jakarta.ws.rs.Produces;\r\n\r\n@Path(\"/hello-world\")\r\npublic class HelloResource {\r\n    @GET\r\n    @Produces(\"text/plain\")\r\n    public String hello() {\r\n        return \"Hello, World!\";\r\n    }\r\n}
+===================================================================
+diff --git a/src/main/java/com/example/billing_system/HelloResource.java b/src/main/java/com/example/billing_system/HelloResource.java
+--- a/src/main/java/com/example/billing_system/HelloResource.java	(revision eca56ef895c197ef31e52d4b1f30cbe418536f9b)
++++ b/src/main/java/com/example/billing_system/HelloResource.java	(date 1752113318650)
+@@ -11,4 +11,5 @@
+     public String hello() {
+         return "Hello, World!";
+     }
+-}
+\ No newline at end of file
++}
++
